@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "e873617e-bf66-4865-9f85-25ad2be5d2e7",
+		"name": "Videogames",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8258064"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/read?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"read"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "title",
+							"value": "fan",
+							"disabled": true
+						},
+						{
+							"key": "tags",
+							"value": "RPG",
+							"disabled": true
+						},
+						{
+							"key": "developer",
+							"value": "Leo",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/create?title=Fallout&developer=Black Isle Studios&tags=RPG,Adventure",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Fallout"
+						},
+						{
+							"key": "developer",
+							"value": "Black Isle Studios"
+						},
+						{
+							"key": "tags",
+							"value": "RPG,Adventure"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/update?id=1&title=Noname&developer=Unknown&tags=Foo,Bar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "title",
+							"value": "Noname"
+						},
+						{
+							"key": "developer",
+							"value": "Unknown"
+						},
+						{
+							"key": "tags",
+							"value": "Foo,Bar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/delete?id=30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
